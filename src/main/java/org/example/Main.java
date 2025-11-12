@@ -11,5 +11,14 @@ public class Main {
         ApplicationContext context = new AnnotationConfigApplicationContext("org.example.entities");
         Cat cat = context.getBean(Cat.class);
         Dog dog = context.getBean(Dog.class);
+
+        cat.setName("Angela");
+        dog.setName("Bob");
+
+        System.out.println(cat.voice());
+        System.out.println(cat.voice());
+        System.out.println(dog.voice());
+        System.out.println(cat.getName());
+        System.out.println(dog.getName());
     }
 }
